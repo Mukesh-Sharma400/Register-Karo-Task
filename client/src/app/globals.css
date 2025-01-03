@@ -1,0 +1,404 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+  background-color: #1c4670;
+  z-index: 3;
+}
+
+.back-btn {
+  outline: none;
+  border: none;
+  color: #1c4670;
+  background-color: #ffffff;
+  width: 150px;
+  height: 40px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+
+.display-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+
+.person-on-desk {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.archery {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.content-wrapper {
+  position: absolute;
+  max-width: 650px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px;
+  z-index: 2;
+}
+
+.rating-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.google-rating {
+  color: #181617;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.star-box-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.heading {
+  color: #272d37;
+  font-size: 50px;
+  line-height: 60px;
+
+  span {
+    color: #ffa229;
+  }
+}
+
+.description {
+  color: #4f4f4f;
+  font-size: 18px;
+  line-height: 29px;
+
+  span {
+    font-weight: 900;
+  }
+}
+
+.features-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.feature-number {
+  width: fit-content;
+  font-size: 22px;
+  font-weight: 800;
+  background: linear-gradient(127.81deg, #ffa229 10%, #1c4670 68%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.feature-text {
+  color: #4f4f4f;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.btns-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.get-started-btn {
+  outline: none;
+  border: none;
+  color: #ffffff;
+  background-color: #1c4670;
+  width: 204px;
+  height: 54px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+
+.play-btn {
+  outline: none;
+  border: none;
+  color: #282828;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  cursor: pointer;
+}
+
+.floating-features-wrapper {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.floating-feature {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 11.02px 0px 0px 11.02px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 2;
+}
+
+.loading {
+  text-align: center;
+  margin: 50px;
+}
+
+.companies-wrapper-wrapper {
+  width: 100%;
+  padding: 50px;
+}
+
+.companies-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-top: 50px;
+}
+
+.company-wrapper {
+  width: 100%;
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.company-wrapper:hover {
+  transition: all 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.company-page-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-card {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: auto;
+  padding: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.company-heading-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.company-satisfaction {
+  color: #ffa229;
+  font-size: 26.4px;
+  font-weight: 700;
+  line-height: 31.68px;
+  text-align: center;
+  letter-spacing: 0.1599999964237213px;
+}
+
+.company-heading {
+  color: #3c2109;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
+  text-align: center;
+  letter-spacing: 0.1599999964237213px;
+}
+
+.company-message {
+  color: #282728;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.1599999964237213px;
+}
+
+.name-review-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image-name-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.company-owner-name {
+  color: #3c2109;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.1599999964237213px;
+}
+
+.company-description {
+  color: #282728;
+  font-size: 12.8px;
+  font-weight: 400;
+  line-height: 19.2px;
+  letter-spacing: 0.1599999964237213px;
+}
+
+@media (max-width: 1200px) {
+  .content-wrapper {
+    max-width: 550px;
+    padding: 40px;
+  }
+
+  .heading {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .feature-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .feature-number {
+    font-size: 20px;
+  }
+
+  .feature-text {
+    font-size: 13px;
+  }
+
+  .get-started-btn {
+    width: 200px;
+    height: 45px;
+  }
+
+  .person-on-desk {
+    width: 550px;
+    height: auto;
+  }
+
+  .archery {
+    width: 200px;
+    height: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .person-on-desk {
+    display: none;
+  }
+
+  .archery {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .companies-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .floating-features-wrapper {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .companies-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .features-wrapper {
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+  }
+
+  .name-review-wrapper {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
